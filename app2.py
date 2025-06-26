@@ -9,7 +9,7 @@ ui.page_opts(title="PyShiny App with plot", fillable=True)
 with ui.sidebar():
     ui.input_slider("selected_number_of_bins", "Number of Bins", 5, 150, 17)
     ui.input_select("hist_color", "Histogram Color", 
-                    {"blue": "Blue", "green": "Green", "red": "Red", "purple": "Purple"}, 
+                    {"purple": "Purple", "green": "Green", "red": "Red", "blue": "Blue"}, 
                     selected="blue")
 
 @render.plot(alt="A histogram")
