@@ -18,8 +18,12 @@ def histogram():
     x = 100 + 15 * np.random.randn(437)
 
     plt.figure(figsize=(8, 5))
+    
+    # Add edge color to separate bars
     plt.hist(x, bins=input.selected_number_of_bins(), density=True, 
              color=input.hist_color(), edgecolor='black', alpha=0.7)
+    
+    # Add labels and a grid for clarity
     plt.title("Histogram of Random Data")
     plt.xlabel("Value")
     plt.ylabel("Density")
